@@ -48,7 +48,7 @@ async def remove_task( id: int):
 
 while(True):
     try:
-        conn = psycopg2.connect()
+        conn = psycopg2.connect() # connect your db here
         cursor = conn.cursor()
         print("Database connection was successful")
         break
