@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SCHEDULEBOY</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        
+
+        <div class = "task">
+            <div class="title">
+                <p></p>
+            </div>
+
+            <div class="content">
+                <p></p>
+            </div>
+
+            <div class="time_alloted">
+                <p></p>
+            </div>
+
+        </div>
+
+        <div class = "task">
+            <div class="title">
+                <p></p>
+            </div>
+
+            <div class="content">
+                <p></p>
+            </div>
+
+            <div class="time_alloted">
+                <p></p>
+            </div>
+
+        </div>
+        <div class = "task">
+            <div class="title">
+                <p></p>
+            </div>
+
+            <div class="content">
+                <p></p>
+            </div>
+
+            <div class="time_alloted">
+                <p></p>
+            </div>
+
+        </div>
+        <div class = "task">
+            <div class="title">
+                <p></p>
+            </div>
+
+            <div class="content">
+                <p></p>
+            </div>
+
+            <div class="time_alloted">
+                <p></p>
+            </div>
+
+        </div>
+        <div class = "task">
+            <div class="title">
+                <p></p>
+            </div>
+
+            <div class="content">
+                <p></p>
+            </div>
+
+            <div class="time_alloted">
+                <p></p>
+            </div>
+
+        </div>
+        <form id="formation">
+            <input type="text" id="title" class="form-control" placeholder="title">
+            <input type="text" id="content" class="form-control" placeholder="content">
+            <input type="text" id="time_alloted" class="form-control" placeholder="time alloted">
+            <button id="myButton">Submit</button>
+            <script>
+                const element = document.getElementById("myButton");
+                element.addEventListener("click", function updateData(){
+                    let title = document.getElementById("title").value;
+                    let content = document.getElementById("content").value;
+                    let time_alloted = document.getElementById("time_alloted").value;
+                    posttask(title, content, time_alloted);
+                    gettask();
+        
+                });
+                
+
+
+            </script>
+        </form>
+        
+
+    </body>
+</html>
